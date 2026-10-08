@@ -7,7 +7,7 @@ TraumaStation.ImageSharp
 
 <div align="center">
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/TraumaStation/ImageSharp/build-and-test.yml?branch=main)](https://github.com/TraumaStation/ImageSharp/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Trauma-Station/ImageSharp/build-and-test.yml?branch=main)](https://github.com/Trauma-Station/ImageSharp/actions)
 [![codecov](https://codecov.io/gh/SixLabors/ImageSharp/graph/badge.svg?token=g2WJwz770q)](https://codecov.io/gh/SixLabors/ImageSharp)
 [![License: Six Labors Split](https://img.shields.io/badge/license-Six%20Labors%20Split-%23e30183)](https://github.com/SixLabors/ImageSharp/blob/main/LICENSE)
 
