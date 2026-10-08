@@ -599,7 +599,7 @@
         <File Path="Directory.Build.targets" />
         <File Path="LICENSE" />
         <File Path="README.md" />
-        <File Path="SixLabors.ImageSharp.props" />
+        <File Path="TraumaStation.ImageSharp.props" />
     </Folder>
     <Folder Name="/_root/.github/">
         <File Path=".github/CONTRIBUTING.md" />
