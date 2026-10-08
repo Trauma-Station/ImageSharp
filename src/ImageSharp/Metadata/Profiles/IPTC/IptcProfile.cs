@@ -295,7 +295,7 @@ public sealed class IptcProfile : IDeepCloneable<IptcProfile>
 
     private void Initialize()
     {
-        if (this.Data == null || this.Data[0] != IptcTagMarkerByte)
+        if (this.Data == null || this.Data.Length < 4 || this.Data[0] != IptcTagMarkerByte)
         {
             return;
         }
