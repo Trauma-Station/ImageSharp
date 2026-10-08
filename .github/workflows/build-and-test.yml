@@ -113,6 +113,7 @@ jobs:
 
     permissions:
       id-token: write
+      contents: read
 
     steps:
       - name: Install libgdi+, which is required for tests running on ubuntu
