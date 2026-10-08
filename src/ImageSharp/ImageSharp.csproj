@@ -20,6 +20,7 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <NoWarn>RCS0056</NoWarn> <!-- holy shit this is larp -->
   </PropertyGroup>
 
   <PropertyGroup>
