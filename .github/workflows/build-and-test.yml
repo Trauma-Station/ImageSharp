@@ -111,6 +111,9 @@ jobs:
 
     runs-on: ${{ matrix.options.os }}
 
+    permissions:
+      id-token: write
+
     steps:
       - name: Install libgdi+, which is required for tests running on ubuntu
         if: ${{ contains(matrix.options.os, 'ubuntu') }}
@@ -248,9 +251,15 @@ jobs:
         shell: pwsh
         run: ./ci-pack.ps1
 
+      - name: NuGet Login
+        uses: NuGet/login@V1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
       - name: NuGet Publish
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
         shell: pwsh
         run: |
-          dotnet nuget push .\artifacts\*.nupkg -k ${{secrets.NUGET_TOKEN}} -s https://api.nuget.org/v3/index.json --skip-duplicate
-          dotnet nuget push .\artifacts\*.snupkg -k ${{secrets.NUGET_TOKEN}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+          dotnet nuget push .\artifacts\*.nupkg -k ${{steps.login.outputs.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+          dotnet nuget push .\artifacts\*.snupkg -k ${{steps.login.outputs.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
