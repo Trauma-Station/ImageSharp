@@ -13,6 +13,10 @@ on:
       - release/*
     types: [ opened, synchronize, reopened ]
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   # Prime a single LFS cache and expose the exact key for the matrix
   WarmLFS:
@@ -110,10 +114,6 @@ jobs:
             codecov: false
 
     runs-on: ${{ matrix.options.os }}
-
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Install libgdi+, which is required for tests running on ubuntu
