@@ -2,33 +2,37 @@
 
 <img src="https://github.com/SixLabors/Branding/raw/main/icons/imagesharp/sixlabors.imagesharp.svg?sanitize=true" alt="SixLabors.ImageSharp" width="256"/>
 <br/>
-SixLabors.ImageSharp
+TraumaStation.ImageSharp
 </h1>
 
 <div align="center">
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/SixLabors/ImageSharp/build-and-test.yml?branch=main)](https://github.com/SixLabors/ImageSharp/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/TraumaStation/ImageSharp/build-and-test.yml?branch=main)](https://github.com/TraumaStation/ImageSharp/actions)
 [![codecov](https://codecov.io/gh/SixLabors/ImageSharp/graph/badge.svg?token=g2WJwz770q)](https://codecov.io/gh/SixLabors/ImageSharp)
 [![License: Six Labors Split](https://img.shields.io/badge/license-Six%20Labors%20Split-%23e30183)](https://github.com/SixLabors/ImageSharp/blob/main/LICENSE)
 
 </div>
 
-### **ImageSharp** is a high-performance, fully managed, cross-platform 2D graphics API.
+### *TraumaStation*'s **ImageSharp** fork is a high-performance, fully managed, cross-platform 2D graphics API.
 
 ImageSharp is a mature, fully featured, high-performance image processing and graphics library for .NET, built for workloads across device, cloud, and embedded/IoT scenarios.
 
 Designed from the ground up to balance performance, portability, and ease of use, ImageSharp provides a powerful yet approachable API for common image processing tasks, along with the low-level building blocks needed to extend the library for specialized workflows.
 
-Built against [.NET 8](https://docs.microsoft.com/en-us/dotnet/standard/net-standard), ImageSharp can be used in device, cloud, and embedded/IoT scenarios.
+Built against **.NET 10**.
 
+This **unofficial fork** has opinionated changes for Trauma Station, notably:
+- Removed the stupid license begging for open source users.
+
+The namespaces are still the same as upstream to keep code compatible and make it a drop-in replacement.
 
 ## License
-  
-- ImageSharp is licensed under the [Six Labors Split License, Version 1.0](https://github.com/SixLabors/ImageSharp/blob/main/LICENSE)  
 
-## Support Six Labors
+ImageSharp is licensed under the [Six Labors Split License, Version 1.0](https://github.com/SixLabors/ImageSharp/blob/main/LICENSE)
 
-Support the efforts of the development of the Six Labors projects. 
+## Support Six Labors Upstream
+
+Support the efforts of the development of the upstream Six Labors projects.
  - [Purchase a Commercial License :heart:](https://sixlabors.com/pricing/)
  - [Become a sponsor via GitHub Sponsors :heart:]( https://github.com/sponsors/SixLabors)
  - [Become a sponsor via Open Collective :heart:](https://opencollective.com/sixlabors)
@@ -36,17 +40,13 @@ Support the efforts of the development of the Six Labors projects.
 ## Documentation
 
 - [Detailed documentation](https://sixlabors.github.io/docs/) for the ImageSharp API is available. This includes additional conceptual documentation to help you get started.
-- Our [Samples Repository](https://github.com/SixLabors/Samples/tree/main/SixLabors.Samples.ImageSharp) is also available containing buildable code samples demonstrating common activities.
+- Their [Samples Repository](https://github.com/SixLabors/Samples/tree/main/SixLabors.Samples.ImageSharp) is also available containing buildable code samples demonstrating common activities.
 
 ## Questions
 
-- Do you have questions? Please [join our Discussions Forum](https://github.com/SixLabors/ImageSharp/discussions/categories/q-a). Do not open issues for questions.
-- For feature ideas please [join our Discussions Forum](https://github.com/SixLabors/ImageSharp/discussions/categories/ideas) and we'll be happy to discuss.  
-- Please read our [Contribution Guide](https://github.com/SixLabors/ImageSharp/blob/main/.github/CONTRIBUTING.md) before opening issues or pull requests!
-
-## Code of Conduct  
-This project has adopted the code of conduct defined by the [Contributor Covenant](https://contributor-covenant.org/) to clarify expected behavior in our community.
-For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+- Do you have questions? Please [join our their Discussions Forum](https://github.com/SixLabors/ImageSharp/discussions/categories/q-a). Do not open issues for questions.
+- For feature ideas please [join their Discussions Forum](https://github.com/SixLabors/ImageSharp/discussions/categories/ideas) and we'll be happy to discuss.  
+- Please read their [Contribution Guide](https://github.com/SixLabors/ImageSharp/blob/main/.github/CONTRIBUTING.md) before opening issues or pull requests!
 
 ## Installation 
 
@@ -54,7 +54,7 @@ Install stable releases via Nuget; development releases are available via MyGet.
 
 | Package Name                   | Release (NuGet) | Nightly (Feedz.io) |
 |--------------------------------|-----------------|-----------------|
-| `SixLabors.ImageSharp`         | [![NuGet](https://img.shields.io/nuget/v/SixLabors.ImageSharp.svg)](https://www.nuget.org/packages/SixLabors.ImageSharp/) | [![feedz.io](https://img.shields.io/badge/endpoint.svg?url=https%3A%2F%2Ff.feedz.io%2Fsixlabors%2Fsixlabors%2Fshield%2FSixLabors.ImageSharp%2Flatest)](https://f.feedz.io/sixlabors/sixlabors/nuget/index.json) |
+| `TraumaStation.ImageSharp`         | [![NuGet](https://img.shields.io/nuget/v/TraumaStation.ImageSharp.svg)](https://www.nuget.org/packages/TraumaStation.ImageSharp/)
 
 ## Manual build
 
@@ -72,7 +72,7 @@ Alternatively, you can work from command line and/or with a lightweight editor o
 To clone ImageSharp locally, click the "Clone in [YOUR_OS]" button above or run the following git commands:
 
 ```bash
-git clone https://github.com/SixLabors/ImageSharp
+git clone https://github.com/TraumaStation/ImageSharp
 ```
 
 Then set the following config to ensure blame commands ignore mass reformatting commits.
@@ -97,23 +97,4 @@ git submodule update --init --recursive
 
 ## How can you help?
 
-Please... Spread the word, contribute algorithms, submit performance improvements, unit tests, no input is too little. Make sure to read our [Contribution Guide](https://github.com/SixLabors/ImageSharp/blob/main/.github/CONTRIBUTING.md) before opening a PR.
-
-Useful tools for development and links to specifications can be found in our wikipage: [Useful-tools-and-links](https://github.com/SixLabors/ImageSharp/wiki/Useful-tools-and-links).
-
-## The ImageSharp Team
-
-- [James Jackson-South](https://github.com/jimbobsquarepants)
-- [Dirk Lemstra](https://github.com/dlemstra)
-- [Anton Firsov](https://github.com/antonfirsov)
-- [Scott Williams](https://github.com/tocsoft)
-- [Brian Popow](https://github.com/brianpopow)
-
----
-
-<div>
-  <a href="https://www.jetbrains.com/?from=ImageSharp" align="right"><img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" alt="JetBrains" class="logo-footer" width="72" align="left"></a>
-  <br/>
-
-  Special thanks to [JetBrains](https://www.jetbrains.com/?from=ImageSharp) for supporting us with open-source licenses for their IDEs.
-</div>
+Contribute any changes upstream would appreciate [to them](https://github.com/SixLabors/ImageSharp), otherwise just make a PR here.

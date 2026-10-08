@@ -248,12 +248,6 @@ jobs:
         shell: pwsh
         run: ./ci-pack.ps1
 
-      - name: Feedz Publish
-        shell: pwsh
-        run: |
-          dotnet nuget push .\artifacts\*.nupkg -k ${{secrets.FEEDZ_TOKEN}} -s https://f.feedz.io/sixlabors/sixlabors/nuget/index.json --skip-duplicate
-          dotnet nuget push .\artifacts\*.snupkg -k ${{secrets.FEEDZ_TOKEN}} -s https://f.feedz.io/sixlabors/sixlabors/symbols --skip-duplicate
-
       - name: NuGet Publish
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
         shell: pwsh
